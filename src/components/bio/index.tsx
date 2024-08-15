@@ -21,7 +21,12 @@ const Bio = () => {
                     <div className="flex flex-col gap-4">
                         <h3 className="font-medium text-slate-800">About</h3>
                         <p className="leading-7 text-slate-500">
-                            Passionate about creating innovative technological solutions, I have programming experience in Javascript, Laravel and web development with React and Next Js, and in MySQL and PostgreSQL databases. I am hard-working, self-motivated and quick to learn new skills.
+                            Passionate about creating innovative technological solutions, I have programming experience in Javascript, Laravel and web development with React and Next Js, and in MySQL and PostgreSQL databases. I am hard-working, self-motivated and quick to learn new skills. Techs that I often use:
+                            <code className="rounded-md bg-zinc-100 px-1 py-0.5 text-sm mr-1">Nest Js</code>
+                            <code className="rounded-md bg-zinc-100 px-1 py-0.5 text-sm ml-1">Laravel</code>
+                            <code className="rounded-md bg-zinc-100 px-1 py-0.5 text-sm ml-1">React Native</code>
+                            <code className="rounded-md bg-zinc-100 px-1 py-0.5 text-sm ml-1">Jest</code>
+                            <code className="rounded-md bg-zinc-100 px-1 py-0.5 text-sm ml-1">PostgresSQL</code>
                         </p>
                         <ul className="mt-1 flex flex-wrap items-start gap-1.5">
                             <li>
