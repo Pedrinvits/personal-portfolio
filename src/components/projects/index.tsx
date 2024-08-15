@@ -4,6 +4,7 @@ import WebstreamsImage from '../../../public/json.png'
 import ShopImage from '../../../public/shop.png'
 import BarberImage from '../../../public/barber.png'
 import MailImage from '../../../public/mail.png'
+import Link from "next/link";
 
 const Projects = () => {
     return ( 
@@ -18,10 +19,10 @@ const Projects = () => {
                         <p  className="mt-1 text-sm text-slate-500">Full e-commerce integrated with stripe</p>
                         <div className="flex w-full items-center justify-between">
                             <div className="rounded-full px-2 py-1 bg-gray-100"><span className="block text-sm font-semibold text-gray-700">Next js</span></div>
-                            <a href="#" className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
+                            <Link href="https://github.com/Pedrinvits/FSW-SHOP" className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
                                 <span className="text-xs font-normal text-slate-500">View on GitHub</span> 
                                 <TbExternalLink color="gray"size={14}/>
-                            </a>
+                            </Link>
                         </div>
                     </article>
                     <article className="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200">
@@ -30,10 +31,10 @@ const Projects = () => {
                         <p  className="mt-1 text-sm text-slate-500">Some features such as Appointment Scheduling Service Selection</p>
                         <div className="flex w-full items-center justify-between">
                             <div className="rounded-full px-2 py-1 bg-gray-100"><span className="block text-sm font-semibold text-gray-700">Next js</span></div>
-                            <a href="#" className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
+                            <Link href="https://github.com/Pedrinvits/BarberShop" className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
                                 <span className="text-xs font-normal text-slate-500">View on GitHub</span> 
                                 <TbExternalLink color="gray" size={14}/>
-                            </a>
+                            </Link>
                         </div>
                     </article>
                     <article className="flex h-fit flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200">
@@ -42,10 +43,10 @@ const Projects = () => {
                         <p  className="mt-1 text-sm text-slate-500">Consuming 100gb on frontend using Node Webstreams</p>
                         <div className="flex w-full items-center justify-between">
                             <div className="rounded-full px-2 py-1 bg-green-100"><span className="block text-sm font-semibold text-green-700">Node js</span></div>
-                            <a href="#" className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
+                            <Link href="https://github.com/Pedrinvits/WebstreamsNode" className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
                                 <span className="text-xs font-normal text-slate-500">View on GitHub</span> 
                                 <TbExternalLink color="gray" size={14}/>
-                            </a>
+                            </Link>
                         </div>
                     </article>
                     <article className="flex min-h-fit flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200">
@@ -54,10 +55,10 @@ const Projects = () => {
                         <p  className="mt-1 text-sm text-slate-500">Email trigger microservice using SOLID</p>
                         <div className="flex w-full items-center justify-between">
                             <div className="rounded-full px-2 py-1 bg-blue-100"><span className="block text-sm font-semibold text-blue-700">Typescript</span></div>
-                            <a href="#" className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
+                            <Link href="https://github.com/Pedrinvits/solidApi" className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
                                 <span className="text-xs font-normal text-slate-500">View on GitHub</span> 
                                 <TbExternalLink color="gray" size={14}/>
-                            </a>
+                            </Link>
                         </div>
                     </article>
                 </div>
