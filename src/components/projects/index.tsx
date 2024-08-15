@@ -10,7 +10,7 @@ const Projects = () => {
         <section className="max-w-3xl px-0 md:px-4 mt-20">
             <div className="bg-zinc-100 p-6 rounded-2xl">
                 <h3 className="font-medium text-slate-800">Side Projects</h3>
-                <p className="leading-7 text-slate-500">Discover side projects I've been working on</p>
+                <p className="leading-7 text-slate-500">Discover side projects I have been working on</p>
                 <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                     <article className="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200">
                         <Image src={ShopImage} alt="" quality={100} className="rounded-2xl h-[100px] object-cover" />
