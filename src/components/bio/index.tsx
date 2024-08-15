@@ -2,7 +2,7 @@ import Image from "next/image";
 import { SquareArrowOutUpRight } from 'lucide-react';
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io5";
-// import Picture from '';
+import Picture from '../../../public/me.jpeg';
 
 const Bio = () => {
     return (
@@ -10,7 +10,7 @@ const Bio = () => {
             <header className="flex flex-col gap-8">
                 <div className="flex items-center gap-4">
                     <div className="relative flex size-24 shrink-0 overflow-hidden rounded-full border border-white shadow-md shadow-slate-200">
-                        {/* <Image src={Picture} alt="" className="object-cover w-full h-full" /> */}
+                        <Image src={Picture} alt="pedro photo" className="object-cover w-full h-full" />
                     </div>
                     <div>
                         <h1 className="flex scroll-m-20 text-2xl font-semibold tracking-tight">Pedro Vitor Mantovani</h1>
@@ -29,7 +29,7 @@ const Bio = () => {
                                     <IoLogoLinkedin size={20}/>
                                     <span className="not-prose text-black">Pedro</span>
                                     <span className="not-prose text-xs font-normal text-slate-500">Linkedin</span>
-                                    <SquareArrowOutUpRight size={10}/>
+                                    <SquareArrowOutUpRight size={10} color="gray"/>
                                 </a>
                             </li>
                         </ul>
