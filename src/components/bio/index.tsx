@@ -13,7 +13,7 @@ const Bio = () => {
                         <Image src={Picture} alt="pedro photo" className="object-cover w-full h-full" />
                     </div>
                     <div className="flex flex-col gap-1">
-                        <h1 className="flex scroll-m-20 text-2xl font-semibold tracking-tight">Pedro Vitor Mantovani</h1>
+                        <h1 className="flex scroll-m-20 text-[1.4rem] sm:text-2xl font-semibold tracking-tight">Pedro Vitor Mantovani</h1>
                         <p className="text-sm text-slate-500">Full stack software developer</p>
                         <div className="inline-flex items-center gap-1 rounded-full bg-green-100 px-2 py-1 w-fit">
                             <div className="h-2 w-2 rounded-full bg-green-500"></div>
