@@ -12,10 +12,15 @@ const Bio = () => {
                     <div className="relative flex size-24 shrink-0 overflow-hidden rounded-full border border-white shadow-md shadow-slate-200">
                         <Image src={Picture} alt="pedro photo" className="object-cover w-full h-full" />
                     </div>
-                    <div>
+                    <div className="flex flex-col gap-1">
                         <h1 className="flex scroll-m-20 text-2xl font-semibold tracking-tight">Pedro Vitor Mantovani</h1>
                         <p className="text-sm text-slate-500">Full stack software developer</p>
+                        <div className="inline-flex items-center gap-1 rounded-full bg-green-100 px-2 py-1 w-fit">
+                            <div className="h-2 w-2 rounded-full bg-green-500"></div>
+                        <div className="text-xs font-semibold text-green-700">Available for work</div>
                     </div>
+                    </div>
+                   
                 </div>
                 <section className="space-y-2">
                     <div className="flex flex-col gap-4">
