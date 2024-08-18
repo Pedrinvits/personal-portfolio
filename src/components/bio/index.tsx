@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SquareArrowOutUpRight } from 'lucide-react';
-import { IoLogoLinkedin } from "react-icons/io";
-import { IoLogoInstagram } from "react-icons/io5";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+import { FaMedium } from "react-icons/fa6";
 import Picture from '../../../public/me.jpeg';
 
 const Bio = () => {
@@ -33,12 +33,24 @@ const Bio = () => {
                             <code className="rounded-md bg-zinc-100 px-1 py-0.5 text-sm ml-1">Jest</code>
                             <code className="rounded-md bg-zinc-100 px-1 py-0.5 text-sm ml-1">PostgresSQL</code>
                         </p>
-                        <ul className="mt-1 flex flex-wrap items-start gap-1.5">
-                            <li>
-                                <a  href="https://www.linkedin.com/in/pedro-vitor-mantovani/" className="not-prose inline-flex items-center space-x-1.5 rounded-md border border-slate-200 px-2 py-1 text-sm font-medium shadow-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank" title="Linkedin">
+                        <ul className="mt-1">
+                            <li className="flex flex-wrap items-start gap-2">
+                                <a href="https://www.linkedin.com/in/pedro-vitor-mantovani/" className="not-prose inline-flex items-center space-x-1.5 rounded-md border border-slate-200 px-2 py-1 text-sm font-medium shadow-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank" title="Linkedin">
                                     <IoLogoLinkedin size={20}/>
-                                    <span className="not-prose text-black">Pedro</span>
+                                    <span className="not-prose text-black"></span>
                                     <span className="not-prose text-xs font-normal text-slate-500">Linkedin</span>
+                                    <SquareArrowOutUpRight size={10} color="gray"/>
+                                </a>
+                                <a href="https://github.com/pedrinvits" className="not-prose inline-flex items-center space-x-1.5 rounded-md border border-slate-200 px-2 py-1 text-sm font-medium shadow-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank" title="Linkedin">
+                                    <IoLogoGithub size={20}/>
+                                    <span className="not-prose text-black"></span>
+                                    <span className="not-prose text-xs font-normal text-slate-500">Github</span>
+                                    <SquareArrowOutUpRight size={10} color="gray"/>
+                                </a>
+                                <a href="https://medium.com/@pedromantovani26" className="not-prose inline-flex items-center space-x-1.5 rounded-md border border-slate-200 px-2 py-1 text-sm font-medium shadow-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank" title="Linkedin">
+                                    <FaMedium  size={20}/>
+                                    <span className="not-prose text-black"></span>
+                                    <span className="not-prose text-xs font-normal text-slate-500">Medium</span>
                                     <SquareArrowOutUpRight size={10} color="gray"/>
                                 </a>
                             </li>
