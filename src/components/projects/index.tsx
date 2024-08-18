@@ -13,7 +13,7 @@ const Projects = () => {
                 <h3 className="font-medium text-slate-800">Side Projects</h3>
                 <p className="leading-7 text-slate-500">Discover side projects I have been working on</p>
                 <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                    <article className="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200">
+                    <article className="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200 justify-around">
                         <Image src={ShopImage} alt="" quality={100} className="rounded-2xl h-[100px] object-cover" />
                         <h4 className="text-base font-medium text-slate-800">Gaming e-commerce</h4>
                         <p  className="mt-1 text-sm text-slate-500">Full e-commerce integrated with stripe</p>
@@ -25,7 +25,7 @@ const Projects = () => {
                             </Link>
                         </div>
                     </article>
-                    <article className="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200">
+                    <article className="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200 justify-around">
                         <Image src={BarberImage} alt="" quality={100} className="rounded-2xl h-[100px] object-cover" />
                         <h4 className="text-base font-medium text-slate-800">Barbershop scheduling system</h4>
                         <p  className="mt-1 text-sm text-slate-500">Some features such as Appointment Scheduling Service Selection</p>
@@ -37,7 +37,7 @@ const Projects = () => {
                             </Link>
                         </div>
                     </article>
-                    <article className="flex h-fit flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200">
+                    <article className="flex h-fit flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200 justify-around">
                         <Image src={WebstreamsImage} quality={100} alt="" className="rounded-2xl h-[100px] object-cover" />
                         <h4 className="text-base font-medium text-slate-800">Webstreams Api</h4>
                         <p  className="mt-1 text-sm text-slate-500">Consuming 100gb on frontend using Node Webstreams</p>
@@ -49,7 +49,7 @@ const Projects = () => {
                             </Link>
                         </div>
                     </article>
-                    <article className="flex min-h-fit flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200">
+                    <article className="flex min-h-fit flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-md shadow-slate-200 justify-around">
                         <Image src={MailImage} quality={100} alt="" className="rounded-2xl h-[100px] object-cover" />
                         <h4 className="text-base font-medium text-slate-800">Trigger mail Api</h4>
                         <p  className="mt-1 text-sm text-slate-500">Email trigger microservice using SOLID</p>
