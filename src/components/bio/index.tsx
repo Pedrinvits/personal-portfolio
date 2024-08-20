@@ -2,6 +2,8 @@ import Image from "next/image";
 import { SquareArrowOutUpRight } from 'lucide-react';
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import { FaMedium } from "react-icons/fa6";
+import { TbBrandLeetcode } from "react-icons/tb";
+
 import Picture from '../../../public/me.jpeg';
 
 const Bio = () => {
@@ -51,6 +53,12 @@ const Bio = () => {
                                     <FaMedium  size={20}/>
                                     <span className="not-prose text-black"></span>
                                     <span className="not-prose text-xs font-normal text-slate-500">Medium</span>
+                                    <SquareArrowOutUpRight size={10} color="gray"/>
+                                </a>
+                                <a href="https://leetcode.com/u/DhzKgTqkl0/" className="not-prose inline-flex items-center space-x-1.5 rounded-md border border-slate-200 px-2 py-1 text-sm font-medium shadow-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank" title="Linkedin">
+                                    <TbBrandLeetcode  size={20}/>
+                                    <span className="not-prose text-black"></span>
+                                    <span className="not-prose text-xs font-normal text-slate-500">Leet Code</span>
                                     <SquareArrowOutUpRight size={10} color="gray"/>
                                 </a>
                             </li>
