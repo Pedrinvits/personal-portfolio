@@ -67,3 +67,19 @@
     @apply bg-background text-foreground;
   }
 }
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #374151;
+  border-radius: 14px;
+}
+::selection {
+  background-color: #5c5d5e;
+  color: #fff;
+}
