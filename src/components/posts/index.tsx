@@ -6,7 +6,7 @@ const Posts = () => {
             <article className="flex flex-col gap-4">
                 <h3 className="font-medium text-slate-800 dark:text-white text-lg">Posts</h3>
                 <Link href="https://medium.com/@pedromantovani26/the-missing-link-between-development-and-online-visibility-6f5441ca9480" className="group inline-flex items-start gap-3 rounded-lg p-4 outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 hover:shadow-md dark:hover:shadow-md  hover:shadow-slate-200">
-                    <span className="mt-[2px] flex-shrink-0 text-sm font-medium text-slate-400">
+                    <span className="mt-[2px] flex-shrink-0 text-sm font-medium text-slate-500 dark:text-gray-500">
                     08-14-2024 
                     </span>
                     <article>
@@ -15,7 +15,7 @@ const Posts = () => {
                     </article>
                 </Link>
                 <Link href="https://medium.com/@pedromantovani26/the-security-of-your-code-is-in-your-hands-7a5c629b2a64" className="group inline-flex items-start gap-3 rounded-lg p-4 outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 hover:shadow-md dark:hover:shadow-md  hover:shadow-slate-200">
-                    <span className="mt-[2px] flex-shrink-0 text-sm font-medium text-slate-400">
+                    <span className="mt-[2px] flex-shrink-0 text-sm font-medium text-slate-500 dark:text-gray-500">
                     08-19-2024 
                     </span>
                     <article>
