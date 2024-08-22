@@ -62,7 +62,7 @@ const Projects = () => {
                             <h4 className="text-base font-medium text-slate-800 dark:text-white">{project.title}</h4>
                             <p  className="mt-1 text-sm text-slate-500 dark:text-gray-500">{project.desc}</p>
                             <div className="flex w-full items-center justify-between">
-                                <div className={`rounded-full px-2 py-1 ${project.bgcolor}`}><span className={`block text-sm font-semibold ${project.textcolor}`}>{project.tech}</span></div>
+                                <div className={`rounded-full px-2 py-1 ${project.bgcolor}`}><span className={`block text-xs font-semibold ${project.textcolor}`}>{project.tech}</span></div>
                                 <Link href={project.link} className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
                                     <span className="text-xs font-normal text-slate-500 dark:text-gray-500">View on GitHub</span> 
                                     <TbExternalLink color="gray" size={14}/>
