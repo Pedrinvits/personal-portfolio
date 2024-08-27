@@ -26,7 +26,7 @@ const Bio = () => {
                 </div>
                 <section className="space-y-2">
                     <div className="flex flex-col gap-4">
-                        <h3 className="font-medium text-slate-800 dark:text-white text-lg">About</h3>
+                        <h2 className="font-medium text-slate-800 dark:text-white text-lg">About</h2>
                         <p className="leading-7 text-slate-500 dark:text-gray-500">
                             Passionate about creating innovative technological solutions, I have programming experience in Javascript, Laravel and web development with React and Next Js, and in MySQL and PostgreSQL databases. I am hard-working, self-motivated and quick to learn new skills. Techs that I often use:
                             <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm mr-1 ml-1">Nest Js</code>
