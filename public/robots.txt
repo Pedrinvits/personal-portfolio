@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pedro-vitor-portfolio.vercel.app/
+
+# Sitemaps
+Sitemap: https://pedro-vitor-portfolio.vercel.app/sitemap.xml
