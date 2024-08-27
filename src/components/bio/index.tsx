@@ -4,7 +4,7 @@ import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import { FaMedium } from "react-icons/fa6";
 import { TbBrandLeetcode } from "react-icons/tb";
 
-import Picture from '../../../public/me.jpeg';
+import Picture from '../../../public/me.webp';
 
 const Bio = () => {
     return (
@@ -12,7 +12,7 @@ const Bio = () => {
             <header className="flex flex-col gap-8">
                 <div className="flex items-center gap-4">
                     <div className="relative flex size-24 shrink-0 overflow-hidden rounded-full border border-white shadow-md shadow-slate-200 dark:border-card dark:shadow-none">
-                        <Image src={Picture} alt="pedro photo" className="object-cover w-full h-full" />
+                        <Image src={Picture} width={0} height={0} alt="pedro photo" className="object-cover w-full h-full" />
                     </div>
                     <div className="flex flex-col gap-1">
                         <h1 className="flex scroll-m-20 text-[1.4rem] sm:text-2xl font-semibold tracking-tight">Pedro Vitor Mantovani</h1>

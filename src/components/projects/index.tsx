@@ -1,9 +1,9 @@
 import { TbExternalLink } from "react-icons/tb";
 import Image from "next/image";
-import WebstreamsImage from '../../../public/json.png'
-import ShopImage from '../../../public/shop.png'
-import BarberImage from '../../../public/barber.png'
-import MailImage from '../../../public/mail.png'
+import WebstreamsImage from '../../../public/json.webp'
+import ShopImage from '../../../public/shop.webp'
+import BarberImage from '../../../public/barber.webp'
+import MailImage from '../../../public/mail.webp'
 import Link from "next/link";
 
 const ProjectList = [
@@ -58,7 +58,7 @@ const Projects = () => {
                 <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                     {ProjectList.map((project)=>(
                         <article className="flex min-h-fit flex-col gap-4 rounded-2xl dark:bg-neutral-900 dark:border-none border dark:shadow-lg border-slate-200 dark:border-secondary bg-white  p-3 shadow-md  shadow-slate-200 justify-around" key={project.link}>
-                        <Image src={project.image} unoptimized alt={project.title} className="rounded-2xl h-[100px] object-cover" />
+                        <Image src={project.image} unoptimized width={0} height={0} alt={project.title} className="rounded-2xl h-[100px] object-cover" />
                             <h4 className="text-base font-medium text-slate-800 dark:text-white">{project.title}</h4>
                             <p  className="mt-1 text-sm text-slate-500 dark:text-gray-500">{project.desc}</p>
                             <div className="flex w-full items-center justify-between">
