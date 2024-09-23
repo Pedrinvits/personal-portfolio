@@ -1,61 +1,35 @@
+"use client"
 import { TbExternalLink } from "react-icons/tb";
-import Image from "next/image";
-import WebstreamsImage from '../../../public/json.webp'
-import ShopImage from '../../../public/shop.webp'
-import BarberImage from '../../../public/barber.webp'
-import MailImage from '../../../public/mail.webp'
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { usePathname, useSearchParams } from 'next/navigation'
 
-const ProjectList = [
-    {
-        title : "Gaming e-commerce",
-        desc  : "Full e-commerce integrated with stripe",
-        link  : "https://github.com/Pedrinvits/FSW-SHOP",
-        bgcolor : "bg-gray-100",
-        textcolor : "text-gray-700",
-        tech  : "Next js",
-        image : ShopImage
+type Project = {
+    title: string;
+    desc: string;
+    link: string;
+    bgcolor: string;
+    textcolor: string;
+    tech: string;
+    image: StaticImageData;
+  };
 
-    },
-    {
-        title : "Barbershop scheduling system",
-        desc  : "Some features such as Appointment Scheduling Service Selection",
-        link  : "https://github.com/Pedrinvits/BarberShop",
-        bgcolor : "bg-gray-100",
-        textcolor : "text-gray-700",
-        tech  : "Next js",
-        image : BarberImage
-    },
-    {
-        title : "Webstreams Api",
-        desc  : "Consuming 100gb on frontend using Node Webstreams",
-        link  : "https://github.com/Pedrinvits/WebstreamsNode",
-        bgcolor : "bg-green-100",
-        textcolor : "text-green-700",
-        tech  : "Node js",
-        image : WebstreamsImage
-    },
-    {
-        title : "Trigger mail Api",
-        desc  : "Email trigger microservice using SOLID",
-        link  : "https://github.com/Pedrinvits/solidApi",
-        bgcolor : "bg-blue-100",
-        textcolor : "text-blue-700",
-        tech  : "Typescript", 
-        image : MailImage
-    }
-]
-   
-        
+type ProjectsProps = {
+ProjectList: Project[];
+};
 
-
-const Projects = () => {
+const Projects = ({ProjectList} : ProjectsProps) => {
+    const pathname = usePathname()
+    const searchParams = useSearchParams()
+    const url = `${pathname}?${searchParams}`
+    let width = url == '/?' ? 'max-w-3xl' : 'max-w-4xl'; 
+    let grid = url == '/?' ? 'sm:grid-cols-2' : 'sm:grid-cols-3'; 
     return ( 
-        <section className="max-w-3xl px-0 md:px-4 mt-20">
+        <section className={`${width} px-0 md:px-4 mt-20`}>
             <div className="bg-zinc-100 dark:bg-card p-6 rounded-2xl">
                 <h3 className="font-medium text-slate-800 dark:text-white text-lg">Side Projects</h3>
                 <p className="leading-7 text-slate-500 dark:text-slate-300 font-normal text-base">Discover side projects I have been working on</p>
-                <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div className={`mt-4 grid grid-cols-1 gap-3 ${grid}`}>
                     {ProjectList.map((project)=>(
                         <article className="flex min-h-fit flex-col gap-4 rounded-2xl dark:bg-neutral-900 dark:border-none border dark:shadow-lg border-slate-200 dark:border-secondary bg-white  p-3 shadow-md  shadow-slate-200 justify-around" key={project.link}>
                         <Image src={project.image} unoptimized width={0} height={0} alt={project.title} className="rounded-2xl h-[100px] object-cover" />
@@ -71,6 +45,7 @@ const Projects = () => {
                         </article>
                     ))}
                 </div>
+                {url == '/?' ? <p className="not-prose text-xs font-normal text-slate-500 mt-4"><Link href={'/projects'}>See all my projects</Link></p> : ''}
             </div>
         </section>
      );
