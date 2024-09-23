@@ -4,6 +4,7 @@ import { ProjectList } from "./projects";
 import Link from "next/link";
 import { HomeIcon, MoveLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Suspense } from 'react'
 
 const ProjectsImade = () => {
     return (
@@ -15,7 +16,9 @@ const ProjectsImade = () => {
                 </Button>
                 <ModeToggle />
             </div>
-            <Projects ProjectList={ProjectList} />
+            <Suspense>
+                <Projects ProjectList={ProjectList} />
+            </Suspense>
         </main>
     );
 }
