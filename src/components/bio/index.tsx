@@ -28,7 +28,7 @@ const Bio = () => {
                     <div className="flex flex-col gap-4">
                         <h2 className="font-medium text-slate-800 dark:text-white text-lg">About</h2>
                         <p className="leading-7 text-slate-500 dark:text-gray-500">
-                            Full-stack developer with over four years of experience in web and back-end development, I have a bachelor's degree in Information Systems from the University Center Eurípides of Marília. I am a dedicated, self-taught developer who learns new skills quickly.
+                            Full-stack developer with over four years of experience in web and back-end development, I have a bachelor degree in Information Systems from the University Center Eurípides of Marília. I am a dedicated, self-taught developer who learns new skills quickly.
                             <br/>
                             I have frequently worked on multiple projects utilizing Docker, AWS, Linux, and caching with Redis. In many of my projects, I was responsible for resolving configuration issues across different environments/machines, as well as overseeing the production deployment of tasks.My main development technologies that I often use:
                             <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm mr-1 ml-1">Nest Js</code>
