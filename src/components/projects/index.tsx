@@ -46,7 +46,7 @@ const Projects = ({ProjectList} : ProjectsProps) => {
                         </article>
                     ))}
                 </div>
-                {url == '/?' ? <p className="not-prose text-xs font-medium text-slate-800 mt-4"><Link className="flex items-center gap-1 justify-start" href={'/projects'}>See all my projects <ArrowRight size={15}/></Link></p> : ''}
+                {url == '/?' ? <p className="not-prose text-xs font-medium text-slate-800 dark:text-white mt-4"><Link className="flex items-center gap-1 justify-start" href={'/projects'}>See all my projects <ArrowRight size={15}/></Link></p> : ''}
             </div>
         </section>
      );
