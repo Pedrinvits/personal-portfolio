@@ -3,6 +3,7 @@ import { TbExternalLink } from "react-icons/tb";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { usePathname, useSearchParams } from 'next/navigation'
+import { ArrowRight } from "lucide-react";
 
 type Project = {
     title: string;
@@ -45,7 +46,7 @@ const Projects = ({ProjectList} : ProjectsProps) => {
                         </article>
                     ))}
                 </div>
-                {url == '/?' ? <p className="not-prose text-xs font-normal text-slate-500 mt-4"><Link href={'/projects'}>See all my projects</Link></p> : ''}
+                {url == '/?' ? <p className="not-prose text-xs font-medium text-slate-800 mt-4"><Link className="flex items-center gap-1 justify-start" href={'/projects'}>See all my projects <ArrowRight size={15}/></Link></p> : ''}
             </div>
         </section>
      );
