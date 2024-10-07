@@ -11,8 +11,8 @@ const Bio = () => {
         <div className="max-w-2xl px-4">
             <header className="flex flex-col gap-8">
                 <div className="flex items-center gap-4">
-                    <div className="relative flex size-24 shrink-0 overflow-hidden rounded-full border-none shadow-md shadow-slate-200 dark:border-card dark:shadow-none">
-                        <Image src={Picture} width={0} height={0} alt="pedro photo" className="object-cover w-full h-full" />
+                    <div className="relative flex size-24 shrink-0 overflow-hidden rounded-full border-none">
+                        <Image loading="lazy" unoptimized src={Picture} width={0} height={0} alt="pedro photo" className="object-cover w-full h-full" />
                     </div>
                     <div className="flex flex-col gap-1">
                         <h1 className="flex scroll-m-20 text-[1.4rem] sm:text-2xl font-semibold tracking-tight">Pedro Vitor Mantovani</h1>
@@ -30,7 +30,7 @@ const Bio = () => {
                         <p className="leading-7 text-slate-500 dark:text-gray-500">
                             Full-stack developer with over four years of experience in web and back-end development, I have a bachelor degree in Information Systems from the University Center Eurípides of Marília. I am a dedicated, self-taught developer who learns new skills quickly.
                             <br/>
-                            I have frequently worked on multiple projects utilizing Docker, AWS, Linux, and caching with Redis. In many of my projects, I was responsible for resolving configuration issues across different environments/machines, as well as overseeing the production deployment of tasks.My main development technologies that I often use:
+                            I have frequently worked on multiple projects utilizing Docker, AWS, Linux, and caching with Redis. In many of my projects, I was responsible for resolving configuration issues across different environments/machines, as well as overseeing the production deployment of tasks. My main development technologies that I often use:
                             <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm mr-1 ml-1">Nest Js</code>
                             <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm mr-1 ml-1">Next Js</code>
                             <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm ml-1">Laravel</code>
