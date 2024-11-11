@@ -13,6 +13,10 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import axios from "axios"
+import { useToast }  from "@/hooks/use-toast"
+import { Loader2 } from "lucide-react"
+import { useState } from "react"
 
 const formSchema = z.object(
     {
@@ -23,6 +27,8 @@ const formSchema = z.object(
 )
 
 export function FormComponent() {
+  const { toast } = useToast()
+  const [isSubmiting,setIsSubmiting] = useState(false)
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -33,8 +39,24 @@ export function FormComponent() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmiting(true)
+    try {
+         const res = await axios.post('/api/contact',values)
+        if(res.status == 200) {
+            toast({
+                title: res.data.message,
+            })
+        }
+    }catch(err){
+        toast({
+            title: "An unexpected issue occurred. Please try again later",
+        })
+        
+    }
+    finally {
+        setIsSubmiting(false)
+    }
   }
 
   return (
@@ -81,7 +103,9 @@ export function FormComponent() {
                 </FormItem>
               )}
             />
-        <Button type="submit" className="w-full sm:w-fit self-start">Submit</Button>
+        <Button type="submit" className="w-full sm:w-fit self-start" disabled={isSubmiting}>
+        {isSubmiting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : "Submit"}
+        </Button>
       </form>
     </Form>
   )
