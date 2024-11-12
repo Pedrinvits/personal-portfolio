@@ -5,6 +5,7 @@ import WebstreamsImage from '../../../public/json.webp';
 import MailImage from '../../../public/mail.webp';
 import GoalsImage from '../../../public/Goals-.png';
 import ChatflyImage from '../../../public/chatfly.png';
+import CodeHubImage from '../../../public/codehub.png';
 
 export const ProjectList: {
   title: string;
@@ -15,6 +16,15 @@ export const ProjectList: {
   tech: string;
   image: StaticImageData;
 }[] = [
+  {
+    title: "CodeHub",
+    desc: "Social network for programmers",
+    link: "https://github.com/Pedrinvits/CodeHub",
+    bgcolor: "bg-gray-100",
+    textcolor: "text-gray-700",
+    tech: "Next js",
+    image: CodeHubImage,
+  },
   {
     title: "Gaming e-commerce",
     desc: "Full e-commerce integrated with stripe",
