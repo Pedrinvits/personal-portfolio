@@ -4,7 +4,7 @@ import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import { FaMedium } from "react-icons/fa6";
 import { TbBrandLeetcode } from "react-icons/tb";
 
-import Picture from '../../../public/me.webp';
+import Picture from '../../../public/me.jpeg';
 
 const Bio = () => {
     return (
