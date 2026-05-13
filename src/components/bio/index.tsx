@@ -16,7 +16,7 @@ const Bio = () => {
                     </div>
                     <div className="flex flex-col gap-1">
                         <h1 className="flex scroll-m-20 text-[1.4rem] sm:text-2xl font-semibold tracking-tight">Pedro Vitor Mantovani</h1>
-                        <p className="text-sm text-slate-500 dark:text-gray-500">Full stack software developer</p>
+                        <p className="text-sm text-slate-500 dark:text-gray-500">Full Stack Software Developer</p>
                         <div className="inline-flex items-center gap-1 rounded-full bg-green-100 px-2 py-1 w-fit">
                             <div className="h-2 w-2 rounded-full bg-green-500"></div>
                         <div className="text-xs font-semibold text-green-700">Available for work</div>
@@ -28,8 +28,8 @@ const Bio = () => {
                     <div className="flex flex-col gap-4">
                         <h2 className="font-medium text-slate-800 dark:text-white text-lg">About</h2>
                         <p className="leading-7 text-slate-500 dark:text-gray-500">
-                        Full-stack developer with 4+ years of web and back-end experience and a degree in Information Systems. Skilled in Docker, AWS, Linux, and Redis caching. Proficient in troubleshooting configuration issues and managing production deployments across various environments. Quick learner and dedicated to continuous improvement. My main development technologies that I often use:
-                            <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm mr-1 ml-1">Nest Js</code>
+                        Full-stack developer with 6+ years of web and back-end experience and a degree in Information Systems. Skilled in Docker, AWS, Linux, and Redis caching. Proficient in troubleshooting configuration issues and managing production deployments across various environments. Quick learner and dedicated to continuous improvement. My main development technologies that I often use:
+                            <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm mr-1 ml-1">PHP</code>
                             <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm mr-1 ml-1">Next Js</code>
                             <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm ml-1">Laravel</code>
                             <code className="rounded-md bg-zinc-100 dark:bg-card px-1 py-0.5 text-sm ml-1">React Native</code>
