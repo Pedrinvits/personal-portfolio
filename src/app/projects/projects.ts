@@ -6,6 +6,8 @@ import MailImage from '../../../public/mail.webp';
 import GoalsImage from '../../../public/Goals-.png';
 import ChatflyImage from '../../../public/chatfly.png';
 import CodeHubImage from '../../../public/codehub.png';
+import BonchefImage from '../../../public/bonchef.png';
+import PubImage from '../../../public/pub.png';
 
 export const ProjectList: {
   title: string;
@@ -16,6 +18,24 @@ export const ProjectList: {
   tech: string;
   image: StaticImageData;
 }[] = [
+  {
+    title: "OtimizeAI",
+    desc: "Traffic distribution, performance tracking, and ad monetization",
+    link: "https://pub.otzads.net/",
+    bgcolor: "bg-purple-100",
+    textcolor: "text-purple-700",
+    tech: "React",
+    image: PubImage,
+  },
+  {
+    title: "Smart IA Platform for Restaurants",
+    desc: "Restaurant management and automation system with integrated payment gateway",
+    link: "https://app.bonchef.com.br/",
+    bgcolor: "bg-gray-100",
+    textcolor: "text-gray-700",
+    tech: "Next js",
+    image: BonchefImage,
+  },
   {
     title: "CodeHub",
     desc: "Social network for programmers",

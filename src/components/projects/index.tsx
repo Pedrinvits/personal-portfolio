@@ -28,8 +28,8 @@ const Projects = ({ProjectList} : ProjectsProps) => {
     return ( 
         <section className={`${width} px-0 md:px-4 mt-20`}>
             <div className="bg-zinc-100 dark:bg-card p-6 rounded-2xl">
-                <h3 className="font-medium text-slate-800 dark:text-white text-lg">Side Projects</h3>
-                <p className="leading-7 text-slate-500 dark:text-slate-300 font-normal text-base">Discover side projects I have been working on</p>
+                <h3 className="font-medium text-slate-800 dark:text-white text-lg">Real Projects</h3>
+                <p className="leading-7 text-slate-500 dark:text-slate-300 font-normal text-base">Discover my online side projects i have been working on</p>
                 <div className={`mt-4 grid grid-cols-1 gap-3 ${grid}`}>
                     {ProjectList.map((project)=>(
                         <article className="flex min-h-fit flex-col gap-4 rounded-2xl dark:bg-neutral-900 dark:border-none border dark:shadow-lg border-slate-200 dark:border-secondary bg-white  p-3 shadow-md  shadow-slate-200 justify-around" key={project.link}>
@@ -39,7 +39,7 @@ const Projects = ({ProjectList} : ProjectsProps) => {
                             <div className="flex w-full items-center justify-between">
                                 <div className={`rounded-full px-2 py-1 ${project.bgcolor}`}><span className={`block text-xs font-semibold ${project.textcolor}`}>{project.tech}</span></div>
                                 <Link href={project.link} className="inline-flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2" target="_blank">
-                                    <span className="text-xs font-normal text-slate-500 dark:text-gray-500">View on GitHub</span> 
+                                    <span className="text-xs font-normal text-slate-500 dark:text-gray-500">View online</span> 
                                     <TbExternalLink color="gray" size={14}/>
                                 </Link>
                             </div>
